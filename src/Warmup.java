@@ -4,46 +4,52 @@ public class Warmup {
     public static void main(String[] args) {
 
 
-        System.out.println(firstChar("bob"));
-        System.out.println(secondChar("bob"));
-        System.out.println(lastChar("bob"));
-        System.out.println(secondToLastChar("bob"));
+//        System.out.println(firstChar("bob"));
+//        System.out.println(secondChar("bob"));
+//        System.out.println(lastChar("bob"));
+//        System.out.println(secondToLastChar("bob"));
+        userWantsToContinue();
 
     }
 
 //    Write a method named firstChar() that takes a string as an input
 //    and returns the first letter as a character data type.
 
-    public static char firstChar(String input) {
-        return input.charAt(0);
-    }
+//    public static char firstChar(String input) {
+//        return input.charAt(0);
+//    }
 
 //    Write a method named secondChar() that takes a string as an input
 //    and returns the first letter as a character data type.
 
-    public static char secondChar(String input) {
-        return input.charAt(1);
-    }
+//    public static char secondChar(String input) {
+//        return input.charAt(1);
+//    }
 
 //    Write a method named lastChar() that takes a string as an input
 //    and returns the last letter as a character data type.
 
-    public static char lastChar(String input) {
-        return input.charAt(input.length() - 1);
-    }
+//    public static char lastChar(String input) {
+//        return input.charAt(input.length() - 1);
+//    }
 
 //    Write a method named secondToLastChar() that takes a string as an input
 //    and returns the second to last letter as a character data type.
 
-    public static char secondToLastChar(String input) {
-        return input.charAt(input.length() - 2);
-    }
+//    public static char secondToLastChar(String input) {
+//        return input.charAt(input.length() - 2);
+//    }
 
 //    Write a method named userWantsToContinue().
 //    This method should prompt the user if they want to continue
 //    and then return a boolean value if the user inputs "y" or "yes".
 
-
+    public static Boolean userWantsToContinue() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Continue?: [yes/no]");
+        String input = sc.next().toLowerCase();
+        return input.startsWith("y");
+    }
 
 //    Write a method named isEven() that takes in an integer
 //    and returns a boolean if the input is even or not.
