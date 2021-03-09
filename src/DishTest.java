@@ -7,7 +7,9 @@ public class DishTest {
         dish1.wouldRecommend = true;
 
         dish1.printSummary();
+        DishTools.shoutDishName(dish1);
+        DishTools.analyzeDishCost(dish1);
+        DishTools.flipRecommendation(dish1);
     }
-
 
 }
