@@ -4,8 +4,8 @@ public class Dish {
     public String nameOfDish;
     public boolean wouldRecommend;
 
-    public void printSummary() {
-        System.out.printf("Cost: 0.%d¢ \nName: %s \nRecommended: %b\n",
+    public String printSummary() {
+        return String.format("Cost: 0.%d¢ \nName: %s \nRecommended: %b\n",
                             costInCents, nameOfDish, wouldRecommend);
     }
 
