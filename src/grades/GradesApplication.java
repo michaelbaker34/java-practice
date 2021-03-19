@@ -1,6 +1,7 @@
 package grades;
 
-import java.util.Input;
+import util.Input;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,6 +10,11 @@ import java.util.Map;
 // TODO: The grade average is WAY too precise. It only needs to display to two decimal places.
 // TODO: Why do I keep seeing information for Fred when I search for Cathy's info?
 public class GradesApplication {
+
+    public static void main(String[] args) {
+        GradesApplication ga = new GradesApplication(createStudents(), new Input());
+        ga.init();
+    }
 
     private final Map<String, Student> students;
     private final Input input;
@@ -35,7 +41,7 @@ public class GradesApplication {
             System.out.println("\nSorry, no student found with the GitHub username of " + response);
         }
         System.out.println("\nWould you like to enter a new response?");
-        boolean willContinue = false;
+        boolean willContinue = input.yesNo();
         if (willContinue) {
             runInteraction();
         } else {
@@ -45,17 +51,17 @@ public class GradesApplication {
 
     // Returns a message containing a list of students
     private String getStudentsList() {
-        String output = "Here are the user names of our students:\n\n";
+        StringBuilder output = new StringBuilder("Here are the user names of our students:\n\n");
         for (Map.Entry<String, Student> entry : students.entrySet()) {
-            output += "|" + entry.getKey() + "| ";
+            output.append("|").append(entry.getKey()).append("| ");
         }
-        return "\n" + output.trim();
+        return "\n" + output.toString().trim();
     }
 
     // Returns a formatted message containing student information
     private String getStudentInfo(String username) {
         return String.format(
-                "%nName: %s - GitHub Username: %s%nCurrent Average: %f",
+                "%nName: %s - GitHub Username: %s%nCurrent Average: %.2f",
                 students.get(username).getName(),
                 username,
                 students.get(username).getGradeAverage());
@@ -82,7 +88,7 @@ public class GradesApplication {
         s3.addGrade(100);
 
         students.put("fred123", s1);
-        students.put("cathy123", s1);
+        students.put("cathy123", s2);
         students.put("bob123", s3);
 
         return students;
