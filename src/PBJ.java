@@ -1,9 +1,9 @@
 public class PBJ {
 /*
-        kitchenTool
+    kitchenTool
         knife
         plate
-    superclass extends knife plate
+    superclass extends knife, plate
         boolean isClean;
         boolean isDisposable;
         String location;
@@ -12,7 +12,7 @@ public class PBJ {
         Jelly
         PeanutButter
         Bread
-    superclass extends jelly peanutbutter bread
+    superclass extends jelly, peanutbutter, bread
         boolean edible;
         boolean expired;
         eat();

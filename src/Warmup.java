@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Warmup {
@@ -8,8 +11,21 @@ public class Warmup {
 //        System.out.println(secondChar("bob"));
 //        System.out.println(lastChar("bob"));
 //        System.out.println(secondToLastChar("bob"));
-        userWantsToContinue();
+//        userWantsToContinue();
 
+        List<Integer> numbers = new ArrayList<>(Arrays.asList(
+                1,
+                2,
+                3
+        ));
+        System.out.println(numbers);
+        numbers.add(4);
+        System.out.println(numbers);
+        System.out.println(numbers.get(0));
+        numbers.add(0, 3);
+        System.out.println(numbers);
+        numbers.remove(0);
+        System.out.println(numbers);
     }
 
 //    Write a method named firstChar() that takes a string as an input
@@ -44,12 +60,12 @@ public class Warmup {
 //    This method should prompt the user if they want to continue
 //    and then return a boolean value if the user inputs "y" or "yes".
 
-    public static Boolean userWantsToContinue() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Continue?: [yes/no]");
-        String input = sc.next().toLowerCase();
-        return input.startsWith("y");
-    }
+//    public static Boolean userWantsToContinue() {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Continue?: [yes/no]");
+//        String input = sc.next().toLowerCase();
+//        return input.startsWith("y");
+//    }
 
 //    Write a method named isEven() that takes in an integer
 //    and returns a boolean if the input is even or not.
