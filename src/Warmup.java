@@ -4,7 +4,35 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Warmup {
+
+    // create a static method, secondListIsOneMore, that returns a boolean based on two passed
+// lists of integers. If each integer in the second list is one more than the integer at the same
+// index in the first list, the method will return true and false otherwise. Assume both lists are
+// the same length.
+//
+//        Examples:
+//        ... 1, 2, 3 and 2, 3, 4 returns true
+//        ... 1, 3, 6 and 2, 4, 7 returns true
+//        ... -5, 10, -200 and -4, 11, -199 returns true
+//        ... 1, 2, 3 and 2, 3, 5 returns false
+
+    public static boolean secondListIsOneMore(List<Integer> list1, List<Integer> list2) {
+        for (int i = 0; i < list1.size(); i++) {
+            if (list2.get(i) == (list1.get(i) + 1)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
+
+        List<Integer> lOne = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+        List<Integer> lTwo = new ArrayList<>(Arrays.asList(2, 3, 4, 5));
+        List<Integer> lThree = new ArrayList<>(Arrays.asList(3, 4, 5, 6));
+        System.out.println(secondListIsOneMore(lOne, lTwo)); // should return true
+        System.out.println(secondListIsOneMore(lOne, lThree)); // should return false
+        System.out.println(secondListIsOneMore(lTwo, lThree)); // should return true
 
 
 //        System.out.println(firstChar("bob"));
@@ -13,20 +41,20 @@ public class Warmup {
 //        System.out.println(secondToLastChar("bob"));
 //        userWantsToContinue();
 
-        List<Integer> numbers = new ArrayList<>(Arrays.asList(
-                1,
-                2,
-                3
-        ));
-        System.out.println(numbers);
-        numbers.add(4);
-        System.out.println(numbers);
-        System.out.println(numbers.get(0));
-        numbers.add(0, 3);
-        System.out.println(numbers);
-        numbers.remove(0);
-        System.out.println(numbers);
-    }
+//        List<Integer> numbers = new ArrayList<>(Arrays.asList(
+//                1,
+//                2,
+//                3
+//        ));
+//        System.out.println(numbers);
+//        numbers.add(4);
+//        System.out.println(numbers);
+//        System.out.println(numbers.get(0));
+//        numbers.add(0, 3);
+//        System.out.println(numbers);
+//        numbers.remove(0);
+//        System.out.println(numbers);
+//    }
 
 //    Write a method named firstChar() that takes a string as an input
 //    and returns the first letter as a character data type.
@@ -71,10 +99,8 @@ public class Warmup {
 //    and returns a boolean if the input is even or not.
 
 
-
 //    Write a method named isOdd() that takes in an integer
 //    and returns a boolean if the input is odd or not.
-
 
 
 //    Write a method named countOdds(start, end)
@@ -82,21 +108,17 @@ public class Warmup {
 //    all odd numbers between the start and the end input integers.
 
 
-
 //    Write a method named countEvens(start, end) that returns an integer
 //    containing the integer that is the count of all even numbers
 //    between the start and the end input integers.
-
 
 
 //    Write a method named isVowel() that accepts a String input of length 1
 //    and returns a boolean if that string is a vowel other than "y".
 
 
-
 //    Write a method named hasVowels() that accepts a string of any length
 //    and returns a boolean if there are any vowels in that string.
-
 
 
 //    Write a method named countVowels() that accepts a string of any length
@@ -104,15 +126,12 @@ public class Warmup {
 //    in the provided input String.
 
 
-
 //    Write a solution to FizzBuzz using recursion instead of a loop.
-
 
 
 //    Write a method named isPrime() that that accepts in an integer number
 //    and returns a boolean if the number is evenly divisible
 //    only by either 1 or the number itself.
-
 
 
 //    Write a method named getTwentyPrimes() that returns a string
@@ -121,5 +140,5 @@ public class Warmup {
 //    until we have a total count of 20 primes in the string.
 
 
-
+    }
 }
