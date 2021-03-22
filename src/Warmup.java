@@ -16,14 +16,22 @@ public class Warmup {
 //        ... -5, 10, -200 and -4, 11, -199 returns true
 //        ... 1, 2, 3 and 2, 3, 5 returns false
 
-    public static boolean secondListIsOneMore(List<Integer> list1, List<Integer> list2) {
-        for (int i = 0; i < list1.size(); i++) {
-            if (list2.get(i) == (list1.get(i) + 1)) {
-                return true;
+//    public static boolean secondListIsOneMore(List<Integer> lOne, List<Integer> lTwo) {
+//        for (int i = 0; i < lOne.size(); i += 1) {
+//            if (lOne.get(i) + 1 != lTwo.get(i)) {
+//                return false;
+//            }
+//        }
+//        return true;
+
+        public static boolean secondListIsOneMore(List<Integer> lOne, List<Integer> lTwo) {
+            for (int i = 0; i < lOne.size(); i++) {
+                if (lTwo.get(i) == (lOne.get(i) + 1)) {
+                    return true;
+                }
             }
+            return false;
         }
-        return false;
-    }
 
     public static void main(String[] args) {
 
