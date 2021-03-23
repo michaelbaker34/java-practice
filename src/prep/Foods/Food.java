@@ -1,7 +1,5 @@
 package prep.Foods;
 
-import java.util.Collection;
-
 public abstract class Food implements Consumable {
 
     private String name;
