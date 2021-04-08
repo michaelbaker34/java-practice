@@ -62,10 +62,11 @@ public class Warmup {
 //        System.out.println(numbers);
 //        numbers.remove(0);
 //        System.out.println(numbers);
-//    }
+    }
 
 //    Write a method named firstChar() that takes a string as an input
 //    and returns the first letter as a character data type.
+
 
 //    public static char firstChar(String input) {
 //        return input.charAt(0);
@@ -148,5 +149,4 @@ public class Warmup {
 //    until we have a total count of 20 primes in the string.
 
 
-    }
 }
