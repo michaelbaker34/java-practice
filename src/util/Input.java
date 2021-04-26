@@ -19,6 +19,7 @@ public class Input {
         return (input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes"));
     }
 
+
     public int getInt() {
         if (scanner.hasNextInt()) {
             return scanner.nextInt();
@@ -28,6 +29,7 @@ public class Input {
             return getInt();
         }
     }
+
 
     public int getInt(int min, int max) {
         int userInt = getInt();
@@ -39,6 +41,7 @@ public class Input {
         }
     }
 
+
     public double getDouble() {
         if (scanner.hasNextDouble()) {
             return scanner.nextDouble();
@@ -48,6 +51,7 @@ public class Input {
             return getDouble();
         }
     }
+
 
     public double getDouble(double min, double max) {
         double userDouble = getDouble();
@@ -66,7 +70,5 @@ public class Input {
         double userInt = input.getDouble(1.5, 3.5);
         System.out.println("You entered: " + userInt);
     }
-
-
 
 }
