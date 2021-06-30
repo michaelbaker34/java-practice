@@ -33,15 +33,26 @@ public class Warmup {
             return false;
         }
 
+
+        
+//    Write a method named firstChar() that takes a string as an input
+//    and returns the first letter as a character data type.
+
+        public static Character firstChar(String input) {
+            Character firstLetter = input.charAt(0);
+            return firstLetter;
+        } 
+
     public static void main(String[] args) {
 
-        List<Integer> lOne = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-        List<Integer> lTwo = new ArrayList<>(Arrays.asList(2, 3, 4, 5));
-        List<Integer> lThree = new ArrayList<>(Arrays.asList(3, 4, 5, 6));
-        System.out.println(secondListIsOneMore(lOne, lTwo)); // should return true
-        System.out.println(secondListIsOneMore(lOne, lThree)); // should return false
-        System.out.println(secondListIsOneMore(lTwo, lThree)); // should return true
+        // List<Integer> lOne = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+        // List<Integer> lTwo = new ArrayList<>(Arrays.asList(2, 3, 4, 5));
+        // List<Integer> lThree = new ArrayList<>(Arrays.asList(3, 4, 5, 6));
+        // System.out.println(secondListIsOneMore(lOne, lTwo)); // return true
+        // System.out.println(secondListIsOneMore(lOne, lThree)); // return false
+        // System.out.println(secondListIsOneMore(lTwo, lThree)); // return true
 
+        System.out.println(firstChar("word")); // return "w"
 
 //        System.out.println(firstChar("bob"));
 //        System.out.println(secondChar("bob"));
@@ -63,10 +74,6 @@ public class Warmup {
 //        numbers.remove(0);
 //        System.out.println(numbers);
     }
-
-//    Write a method named firstChar() that takes a string as an input
-//    and returns the first letter as a character data type.
-
 
 //    public static char firstChar(String input) {
 //        return input.charAt(0);
