@@ -43,6 +43,14 @@ public class Warmup {
             return firstLetter;
         } 
 
+//    Write a method named secondChar() that takes a string as an input
+//    and returns the first letter as a character data type.
+
+        public static Character secondChar(String input) {
+            Character secondChar = input.charAt(1);
+            return secondChar;
+        }
+
     public static void main(String[] args) {
 
         // List<Integer> lOne = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
@@ -52,13 +60,11 @@ public class Warmup {
         // System.out.println(secondListIsOneMore(lOne, lThree)); // return false
         // System.out.println(secondListIsOneMore(lTwo, lThree)); // return true
 
-        System.out.println(firstChar("word")); // return "w"
-
-//        System.out.println(firstChar("bob"));
-//        System.out.println(secondChar("bob"));
-//        System.out.println(lastChar("bob"));
-//        System.out.println(secondToLastChar("bob"));
-//        userWantsToContinue();
+       System.out.println(firstChar("bob"));
+       System.out.println(secondChar("bob"));
+    //    System.out.println(lastChar("bob"));
+    //    System.out.println(secondToLastChar("bob"));
+    //    userWantsToContinue();
 
 //        List<Integer> numbers = new ArrayList<>(Arrays.asList(
 //                1,
@@ -74,13 +80,8 @@ public class Warmup {
 //        numbers.remove(0);
 //        System.out.println(numbers);
     }
+    /*  =_end of main_= */
 
-//    public static char firstChar(String input) {
-//        return input.charAt(0);
-//    }
-
-//    Write a method named secondChar() that takes a string as an input
-//    and returns the first letter as a character data type.
 
 //    public static char secondChar(String input) {
 //        return input.charAt(1);
