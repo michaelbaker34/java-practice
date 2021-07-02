@@ -38,17 +38,25 @@ public class Warmup {
 //    Write a method named firstChar() that takes a string as an input
 //    and returns the first letter as a character data type.
 
-        public static Character firstChar(String input) {
-            Character firstLetter = input.charAt(0);
+        public static char firstChar(String input) {
+            char firstLetter = input.charAt(0);
             return firstLetter;
         } 
 
 //    Write a method named secondChar() that takes a string as an input
 //    and returns the first letter as a character data type.
 
-        public static Character secondChar(String input) {
-            Character secondChar = input.charAt(1);
+        public static char secondChar(String input) {
+            char secondChar = input.charAt(1);
             return secondChar;
+        }
+
+//    Write a method named lastChar() that takes a string as an input
+//    and returns the last letter as a character data type.
+
+        public static char lastChar(String input) {
+            char lastLetter = input.charAt(input.length() - 1);
+            return lastLetter;
         }
 
     public static void main(String[] args) {
@@ -62,7 +70,7 @@ public class Warmup {
 
        System.out.println(firstChar("bob"));
        System.out.println(secondChar("bob"));
-    //    System.out.println(lastChar("bob"));
+       System.out.println(lastChar("bob"));
     //    System.out.println(secondToLastChar("bob"));
     //    userWantsToContinue();
 
@@ -83,23 +91,10 @@ public class Warmup {
     /*  =_end of main_= */
 
 
-//    public static char secondChar(String input) {
-//        return input.charAt(1);
-//    }
 
-//    Write a method named lastChar() that takes a string as an input
-//    and returns the last letter as a character data type.
-
-//    public static char lastChar(String input) {
-//        return input.charAt(input.length() - 1);
-//    }
 
 //    Write a method named secondToLastChar() that takes a string as an input
 //    and returns the second to last letter as a character data type.
-
-//    public static char secondToLastChar(String input) {
-//        return input.charAt(input.length() - 2);
-//    }
 
 //    Write a method named userWantsToContinue().
 //    This method should prompt the user if they want to continue
