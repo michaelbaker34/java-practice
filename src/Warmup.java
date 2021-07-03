@@ -23,7 +23,6 @@ public class Warmup {
 //            }
 //        }
 //        return true;
-
         public static boolean secondListIsOneMore(List<Integer> lOne, List<Integer> lTwo) {
             for (int i = 0; i < lOne.size(); i++) {
                 if (lTwo.get(i) == (lOne.get(i) + 1)) {
@@ -37,27 +36,35 @@ public class Warmup {
         
 //    Write a method named firstChar() that takes a string as an input
 //    and returns the first letter as a character data type.
-
         public static char firstChar(String input) {
             char firstLetter = input.charAt(0);
             return firstLetter;
         } 
 
+
 //    Write a method named secondChar() that takes a string as an input
 //    and returns the first letter as a character data type.
-
         public static char secondChar(String input) {
             char secondChar = input.charAt(1);
             return secondChar;
         }
 
+
 //    Write a method named lastChar() that takes a string as an input
 //    and returns the last letter as a character data type.
-
         public static char lastChar(String input) {
             char lastLetter = input.charAt(input.length() - 1);
             return lastLetter;
         }
+
+
+//    Write a method named secondToLastChar() that takes a string as an input
+//    and returns the second to last letter as a character data type.
+        public static char secondToLastChar(String input) {
+            char secondToLast = input.charAt(input.length() - 2);
+            return secondToLast;
+        }
+
 
     public static void main(String[] args) {
 
@@ -67,11 +74,10 @@ public class Warmup {
         // System.out.println(secondListIsOneMore(lOne, lTwo)); // return true
         // System.out.println(secondListIsOneMore(lOne, lThree)); // return false
         // System.out.println(secondListIsOneMore(lTwo, lThree)); // return true
-
        System.out.println(firstChar("bob"));
        System.out.println(secondChar("bob"));
        System.out.println(lastChar("bob"));
-    //    System.out.println(secondToLastChar("bob"));
+       System.out.println(secondToLastChar("bob"));
     //    userWantsToContinue();
 
 //        List<Integer> numbers = new ArrayList<>(Arrays.asList(
@@ -88,13 +94,13 @@ public class Warmup {
 //        numbers.remove(0);
 //        System.out.println(numbers);
     }
+
     /*  =_end of main_= */
 
 
 
 
-//    Write a method named secondToLastChar() that takes a string as an input
-//    and returns the second to last letter as a character data type.
+
 
 //    Write a method named userWantsToContinue().
 //    This method should prompt the user if they want to continue
