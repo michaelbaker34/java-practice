@@ -66,6 +66,18 @@ public class Warmup {
         }
 
 
+//    Write a method named userWantsToContinue().
+//    This method should prompt the user if they want to continue
+//    and then return a boolean value if the user inputs "y" or "yes".
+        public static boolean userWantsToContinue() {
+            try(Scanner scanner = new Scanner(System.in);) {
+                System.out.println("Continue?: [yes/no]");
+                String input = scanner.next().toLowerCase();
+                return input.startsWith("y");
+            }
+        }
+
+
     public static void main(String[] args) {
 
         // List<Integer> lOne = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
@@ -74,11 +86,11 @@ public class Warmup {
         // System.out.println(secondListIsOneMore(lOne, lTwo)); // return true
         // System.out.println(secondListIsOneMore(lOne, lThree)); // return false
         // System.out.println(secondListIsOneMore(lTwo, lThree)); // return true
-       System.out.println(firstChar("bob"));
-       System.out.println(secondChar("bob"));
-       System.out.println(lastChar("bob"));
-       System.out.println(secondToLastChar("bob"));
-    //    userWantsToContinue();
+    //    System.out.println(firstChar("bob"));
+    //    System.out.println(secondChar("bob"));
+    //    System.out.println(lastChar("bob"));
+    //    System.out.println(secondToLastChar("bob"));
+       userWantsToContinue();
 
 //        List<Integer> numbers = new ArrayList<>(Arrays.asList(
 //                1,
@@ -97,21 +109,6 @@ public class Warmup {
 
     /*  =_end of main_= */
 
-
-
-
-
-
-//    Write a method named userWantsToContinue().
-//    This method should prompt the user if they want to continue
-//    and then return a boolean value if the user inputs "y" or "yes".
-
-//    public static Boolean userWantsToContinue() {
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Continue?: [yes/no]");
-//        String input = sc.next().toLowerCase();
-//        return input.startsWith("y");
-//    }
 
 //    Write a method named isEven() that takes in an integer
 //    and returns a boolean if the input is even or not.
