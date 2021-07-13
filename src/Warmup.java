@@ -80,21 +80,28 @@ public class Warmup {
 
 //    Write a method named isEven() that takes in an integer
 //    and returns a boolean if the input is even or not.
-        public static boolean isEven() {
-            try(Scanner scanner = new Scanner(System.in)) {
-                System.out.println("Enter integer: ");
-                int input = scanner.nextInt();
-                if (input % 2 == 0) {
-                    System.out.println("even");
-                    return true;
-                } else {
-                    System.out.println("odd");
-                    return false;
-                }
+        public static boolean isEven(int i) {
+            if (i % 2 == 0) {
+                System.out.println("even");
+                return true;
+            } else {
+                System.out.println("not even");
+                return false;
             }
         }
 
 
+//    Write a method named isOdd() that takes in an integer
+//    and returns a boolean if the input is odd or not.
+        public static boolean isOdd(int i) {
+            if (i % 2 != 0) {
+                System.out.println("odd");
+                return true;
+            } else {
+                System.out.println("not odd");
+                return false;
+            }
+        }
         
     public static void main(String[] args) {
 
@@ -109,7 +116,10 @@ public class Warmup {
         // System.out.println(lastChar("bob"));
         // System.out.println(secondToLastChar("bob"));
         // userWantsToContinue();
-        isEven();
+        isEven(1);
+        isEven(2);
+        isOdd(1);
+        isOdd(2);
 
 //        List<Integer> numbers = new ArrayList<>(Arrays.asList(
 //                1,
@@ -130,9 +140,6 @@ public class Warmup {
 
 
 
-
-//    Write a method named isOdd() that takes in an integer
-//    and returns a boolean if the input is odd or not.
 
 
 //    Write a method named countOdds(start, end)
