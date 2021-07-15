@@ -95,13 +95,30 @@ public class Warmup {
 //    and returns a boolean if the input is odd or not.
         public static boolean isOdd(int i) {
             if (i % 2 != 0) {
-                System.out.println("odd");
+                // System.out.println("odd");
                 return true;
             } else {
-                System.out.println("not odd");
+                // System.out.println("not odd");
                 return false;
             }
         }
+
+//    Write a method named countOdds(start, end)
+//    that returns an integer containing the integer that is the count of
+//    all odd numbers between the start and the end input integers.'
+        public static int countOdds(int start, int end) {
+            int oddCount = 0;
+            for (int i = start; i <= end; i++) {
+                if (isOdd(i)) {
+                    oddCount++;
+                } else {
+                    continue;
+                }
+            }
+            System.out.println(oddCount + " odd numbers.");
+            return oddCount;
+        }
+
         
     public static void main(String[] args) {
 
@@ -116,10 +133,12 @@ public class Warmup {
         // System.out.println(lastChar("bob"));
         // System.out.println(secondToLastChar("bob"));
         // userWantsToContinue();
-        isEven(1);
-        isEven(2);
-        isOdd(1);
-        isOdd(2);
+        // isEven(1);
+        // isEven(2);
+        // isOdd(1);
+        // isOdd(2);
+        countOdds(1, 5);
+        countOdds(111, 120);
 
 //        List<Integer> numbers = new ArrayList<>(Arrays.asList(
 //                1,
@@ -142,9 +161,6 @@ public class Warmup {
 
 
 
-//    Write a method named countOdds(start, end)
-//    that returns an integer containing the integer that is the count of
-//    all odd numbers between the start and the end input integers.
 
 
 //    Write a method named countEvens(start, end) that returns an integer
