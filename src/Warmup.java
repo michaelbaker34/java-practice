@@ -82,10 +82,10 @@ public class Warmup {
 //    and returns a boolean if the input is even or not.
         public static boolean isEven(int i) {
             if (i % 2 == 0) {
-                System.out.println("even");
+                // System.out.println("even");
                 return true;
             } else {
-                System.out.println("not even");
+                // System.out.println("not even");
                 return false;
             }
         }
@@ -119,7 +119,25 @@ public class Warmup {
             return oddCount;
         }
 
+
+//    Write a method named countEvens(start, end) that returns an integer
+//    containing the integer that is the count of all even numbers
+//    between the start and the end input integers.
+        public static int countEvens(int start, int end) {
+            int evenCount = 0;
+            for (int i = start; i <= end; i++) {
+                if (isEven(i)) {
+                    evenCount++;
+                } else {
+                    continue;
+                }
+            }
+            System.out.println(evenCount + " even numbers.");
+            return evenCount;
+        }
         
+
+
     public static void main(String[] args) {
 
         // List<Integer> lOne = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
@@ -137,8 +155,10 @@ public class Warmup {
         // isEven(2);
         // isOdd(1);
         // isOdd(2);
-        countOdds(1, 5);
-        countOdds(111, 120);
+        // countOdds(1, 5);
+        // countOdds(111, 120);
+        countEvens(1, 5);
+        countEvens(111, 120);
 
 //        List<Integer> numbers = new ArrayList<>(Arrays.asList(
 //                1,
@@ -163,9 +183,7 @@ public class Warmup {
 
 
 
-//    Write a method named countEvens(start, end) that returns an integer
-//    containing the integer that is the count of all even numbers
-//    between the start and the end input integers.
+
 
 
 //    Write a method named isVowel() that accepts a String input of length 1
