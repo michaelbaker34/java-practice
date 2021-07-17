@@ -137,6 +137,12 @@ public class Warmup {
         }
         
 
+//    Write a method named isVowel() that accepts a String input of length 1
+//    and returns a boolean if that string is a vowel other than "y".
+        public static boolean isVowel() {
+            return true;
+        }
+
 
     public static void main(String[] args) {
 
@@ -181,13 +187,6 @@ public class Warmup {
 
 
 
-
-
-
-
-
-//    Write a method named isVowel() that accepts a String input of length 1
-//    and returns a boolean if that string is a vowel other than "y".
 
 
 //    Write a method named hasVowels() that accepts a string of any length
