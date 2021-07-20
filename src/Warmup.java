@@ -139,9 +139,25 @@ public class Warmup {
 
 //    Write a method named isVowel() that accepts a String input of length 1
 //    and returns a boolean if that string is a vowel other than "y".
-        public static boolean isVowel() {
+        public static boolean isVowel(String input) {
+            CharSequence vowel = "aeiou";
+            if ((input.contains(vowel)) && (input.length() == 1)) {
+                System.out.println("true");
+                return true;
+            } else {
+                System.out.println("false");
+                return false;
+            }
+        }
+
+
+        
+//    Write a method named hasVowels() that accepts a string of any length
+//    and returns a boolean if there are any vowels in that string.
+        public static boolean hasVowels() {
             return true;
         }
+
 
 
     public static void main(String[] args) {
@@ -163,8 +179,9 @@ public class Warmup {
         // isOdd(2);
         // countOdds(1, 5);
         // countOdds(111, 120);
-        countEvens(1, 5);
-        countEvens(111, 120);
+        // countEvens(1, 5);
+        // countEvens(111, 120);
+        isVowel("e");
 
 //        List<Integer> numbers = new ArrayList<>(Arrays.asList(
 //                1,
@@ -188,9 +205,6 @@ public class Warmup {
 
 
 
-
-//    Write a method named hasVowels() that accepts a string of any length
-//    and returns a boolean if there are any vowels in that string.
 
 
 //    Write a method named countVowels() that accepts a string of any length
