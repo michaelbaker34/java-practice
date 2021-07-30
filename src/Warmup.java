@@ -141,10 +141,10 @@ public class Warmup {
 //    and returns a boolean if that string is a vowel other than "y".
         public static boolean isVowel(char input) {
             if ("AEIOUaeiou".indexOf(input) != -1) {
-                System.out.println("true");
+                // System.out.println("true");
                 return true;
             } else {
-                System.out.println("false");
+                // System.out.println("false");
                 return false;
             }
         }
@@ -153,21 +153,32 @@ public class Warmup {
         
 //    Write a method named hasVowels() that accepts a string of any length
 //    and returns a boolean if there are any vowels in that string.
-        // public static boolean hasVowels(String input) {
-        //     if (isVowel(input)) {
-        //         System.out.println("true");
-        //         return true;
-        //     } else {
-        //         System.out.println("false");
-        //         return false;
-        //     }
-        // }
+        public static boolean hasVowels(String input) {
+            int numberOfVowels = 0;
+            for (int i = 0; i < input.length(); i++) {
+                if (isVowel(input.charAt(i))) {
+                    numberOfVowels++;
+                }
+            }
+            if (numberOfVowels > 0) {
+                System.out.println(numberOfVowels);
+            } else {
+                System.out.println("no vowels");
+                return false;
+            }
+            return true;
+        }
 
 
 //    Write a method named countVowels() that accepts a string of any length
 //    and returns an integer count of the number of vowel
 //    in the provided input String.
-
+// public static boolean hasVowels(String input) {
+//     for (int i = 0; i < input.length(); i++) {
+//         if (isVowel(input.charAt(i)));
+//     }
+//     return true;
+// }
 
     public static void main(String[] args) {
 
@@ -190,8 +201,9 @@ public class Warmup {
         // countOdds(111, 120);
         // countEvens(1, 5);
         // countEvens(111, 120);
-        isVowel('e');
-        // hasVowels("pan");
+        // isVowel('e');
+        hasVowels("pan");
+        hasVowels("brd");
 
 //        List<Integer> numbers = new ArrayList<>(Arrays.asList(
 //                1,
