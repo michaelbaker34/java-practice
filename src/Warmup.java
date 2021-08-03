@@ -187,6 +187,22 @@ public class Warmup {
         }
 
 
+//    Write a solution to FizzBuzz using recursion instead of a loop.
+        public static void fizzBuzz() {
+            for (int i = 0; i < 100; i++) {
+                if ((i % 3) == 0) {
+                    System.out.println("fizz");
+                } else if ((i % 5) == 0) {
+                    System.out.println("buzz");
+                } else if ((i % (3 * 5) == 0)) {
+                    System.out.println("fizzbuzz");
+                } else {
+                    System.out.println(i);
+                }
+            }
+        }
+
+
 
     public static void main(String[] args) {
 
@@ -212,7 +228,8 @@ public class Warmup {
         // isVowel('e');
         // hasVowels("pan");
         // hasVowels("brd");
-        countVowels("bread");
+        // countVowels("bread");
+        fizzBuzz();
 
 //        List<Integer> numbers = new ArrayList<>(Arrays.asList(
 //                1,
@@ -239,7 +256,7 @@ public class Warmup {
 
 
 
-//    Write a solution to FizzBuzz using recursion instead of a loop.
+
 
 
 //    Write a method named isPrime() that that accepts in an integer number
