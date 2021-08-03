@@ -187,9 +187,9 @@ public class Warmup {
         }
 
 
-//    Write a solution to FizzBuzz using recursion instead of a loop.
+//    Write a solution to FizzBuzz
         public static void fizzBuzz() {
-            for (int i = 0; i < 100; i++) {
+            for (int i = 1; i <= 100; i++) {
                 if ((i % 3) == 0) {
                     System.out.println("fizz");
                 } else if ((i % 5) == 0) {
@@ -202,6 +202,21 @@ public class Warmup {
             }
         }
 
+//  FizzBuzz recursion
+        public static void fizzBuzzRecursion(int i, int end) {
+            if (i < end) {
+                if ((i % 3) == 0) {
+                    System.out.println("fizz");
+                } else if ((i % 5) == 0) {
+                    System.out.println("buzz");
+                } else if ((i % (3 * 5) == 0)) {
+                    System.out.println("fizzbuzz");
+                } else {
+                    System.out.println(i);
+                }
+                fizzBuzzRecursion(i + 1, end);
+            }
+        }
 
 
     public static void main(String[] args) {
@@ -229,7 +244,8 @@ public class Warmup {
         // hasVowels("pan");
         // hasVowels("brd");
         // countVowels("bread");
-        fizzBuzz();
+        // fizzBuzz();
+        fizzBuzzRecursion(0, 100);
 
 //        List<Integer> numbers = new ArrayList<>(Arrays.asList(
 //                1,
