@@ -219,6 +219,22 @@ public class Warmup {
         }
 
 
+//    Write a method named isPrime() that that accepts in an integer number
+//    and returns a boolean if the number is evenly divisible
+//    only by either 1 or the number itself.
+
+
+        public static boolean isPrime(int input) {
+            
+        }
+
+//    Write a method named getTwentyPrimes() that returns a string
+//    containing the first 20 prime numbers, each separated by a comma.
+//    Output: "1, 2, 3, 5, 7, 11, 13, 17, 19"...
+//    until we have a total count of 20 primes in the string.
+
+
+
     public static void main(String[] args) {
 
         // List<Integer> lOne = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
@@ -263,27 +279,6 @@ public class Warmup {
     }
 
     /*  =_end of main_= */
-
-
-
-
-
-
-
-
-
-
-
-
-//    Write a method named isPrime() that that accepts in an integer number
-//    and returns a boolean if the number is evenly divisible
-//    only by either 1 or the number itself.
-
-
-//    Write a method named getTwentyPrimes() that returns a string
-//    containing the first 20 prime numbers, each separated by a comma.
-//    Output: "1, 2, 3, 5, 7, 11, 13, 17, 19"...
-//    until we have a total count of 20 primes in the string.
 
 
 }
