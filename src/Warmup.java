@@ -223,7 +223,17 @@ public class Warmup {
 //    and returns a boolean if the number is evenly divisible
 //    only by either 1 or the number itself.
         public static boolean isPrime(int input) {
-            
+            boolean flag = false;
+            for (int i = 2; i <= input / 2; ++i) {
+                if (input % i == 0) {
+                    System.out.println(input + " is not prime");
+                    flag = true;
+                }
+            }
+            if (!flag) {
+                System.out.println(input + " is prime");
+            }
+            return flag;
         }
 
 
@@ -231,9 +241,9 @@ public class Warmup {
 //    containing the first 20 prime numbers, each separated by a comma.
 //    Output: "1, 2, 3, 5, 7, 11, 13, 17, 19"...
 //    until we have a total count of 20 primes in the string.
-        public static String getTwentyPrimes() {
+        // public static String getTwentyPrimes() {
             
-        }
+        // }
 
 
     public static void main(String[] args) {
@@ -262,7 +272,9 @@ public class Warmup {
         // hasVowels("brd");
         // countVowels("bread");
         // fizzBuzz();
-        fizzBuzzRecursion(0, 100);
+        // fizzBuzzRecursion(0, 100);
+        isPrime(5);
+        isPrime(9);
 
 //        List<Integer> numbers = new ArrayList<>(Arrays.asList(
 //                1,
