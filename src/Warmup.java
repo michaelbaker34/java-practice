@@ -241,9 +241,13 @@ public class Warmup {
 //    containing the first 20 prime numbers, each separated by a comma.
 //    Output: "1, 2, 3, 5, 7, 11, 13, 17, 19"...
 //    until we have a total count of 20 primes in the string.
-        // public static String getTwentyPrimes() {
-            
-        // }
+        public static String getTwentyPrimes() {
+            for (int i = 0; i < 20; i++) {
+                if isPrime(i) {
+                    
+                }
+            }
+        }
 
 
     public static void main(String[] args) {
