@@ -5,6 +5,74 @@ import java.util.Scanner;
 
 public class Warmup {
 
+
+    public static void main(String[] args) {
+
+//    isPrime(5);
+//    isPrime(9);
+//    List<Integer> lOne = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+//    List<Integer> lTwo = new ArrayList<>(Arrays.asList(2, 3, 4, 5));
+//    List<Integer> lThree = new ArrayList<>(Arrays.asList(3, 4, 5, 6));
+//    System.out.println(secondListIsOneMore(lOne, lTwo)); // return true
+//    System.out.println(secondListIsOneMore(lOne, lThree)); // return false
+//    System.out.println(secondListIsOneMore(lTwo, lThree)); // return true
+//    System.out.println(firstChar("bob"));
+//    System.out.println(secondChar("bob"));
+//    System.out.println(lastChar("bob"));
+//    System.out.println(secondToLastChar("bob"));
+//    userWantsToContinue();
+//    isEven(1);
+//    isEven(2);
+//    isOdd(1);
+//    isOdd(2);
+//    countOdds(1, 5);
+//    countOdds(111, 120);
+//    countEvens(1, 5);
+//    countEvens(111, 120);
+//    isVowel('e');
+//    hasVowels("pan");
+//    hasVowels("brd");
+//    countVowels("bread");
+//    fizzBuzz();
+//    fizzBuzzRecursion(0, 100);
+//    List<Integer> numbers = new ArrayList<>(Arrays.asList(
+//            1,
+//            2,
+//            3
+//    ));
+//    System.out.println(numbers);
+//    numbers.add(4);
+//    System.out.println(numbers);
+//    System.out.println(numbers.get(0));
+//    numbers.add(0, 3);
+//    System.out.println(numbers);
+//    numbers.remove(0);
+//    System.out.println(numbers);
+
+        solve(12, 20, 8);
+    }
+
+    /* end of main */
+
+    /* start of exercises */
+
+    // calculate total meal cost
+    public static void solve(double meal_cost, int tip_percent, int tax_percent) {
+        // Write your code here
+        double total_cost;
+        double total_tip = meal_cost / 100 * tip_percent;
+        double total_tax = ((double)tax_percent) / 100 * tip_percent;
+        
+        total_cost = meal_cost + total_tip + total_tax;
+        int total_cost_rounded = (int)Math.round(total_cost);
+        
+        // System.out.println(total_tip);
+        // System.out.println(total_tax);
+        // System.out.println(total_cost);
+        System.out.println(total_cost_rounded);
+    
+        }
+
     // create a static method, secondListIsOneMore, that returns a boolean based on two passed
 // lists of integers. If each integer in the second list is one more than the integer at the same
 // index in the first list, the method will return true and false otherwise. Assume both lists are
@@ -235,67 +303,6 @@ public class Warmup {
             }
             return flag;
         }
-
-
-//    Write a method named getTwentyPrimes() that returns a string
-//    containing the first 20 prime numbers, each separated by a comma.
-//    Output: "1, 2, 3, 5, 7, 11, 13, 17, 19"...
-//    until we have a total count of 20 primes in the string.
-        public static String getTwentyPrimes() {
-            for (int i = 0; i < 20; i++) {
-                if isPrime(i) {
-                    
-                }
-            }
-        }
-
-
-    public static void main(String[] args) {
-
-        // List<Integer> lOne = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-        // List<Integer> lTwo = new ArrayList<>(Arrays.asList(2, 3, 4, 5));
-        // List<Integer> lThree = new ArrayList<>(Arrays.asList(3, 4, 5, 6));
-        // System.out.println(secondListIsOneMore(lOne, lTwo)); // return true
-        // System.out.println(secondListIsOneMore(lOne, lThree)); // return false
-        // System.out.println(secondListIsOneMore(lTwo, lThree)); // return true
-        // System.out.println(firstChar("bob"));
-        // System.out.println(secondChar("bob"));
-        // System.out.println(lastChar("bob"));
-        // System.out.println(secondToLastChar("bob"));
-        // userWantsToContinue();
-        // isEven(1);
-        // isEven(2);
-        // isOdd(1);
-        // isOdd(2);
-        // countOdds(1, 5);
-        // countOdds(111, 120);
-        // countEvens(1, 5);
-        // countEvens(111, 120);
-        // isVowel('e');
-        // hasVowels("pan");
-        // hasVowels("brd");
-        // countVowels("bread");
-        // fizzBuzz();
-        // fizzBuzzRecursion(0, 100);
-        isPrime(5);
-        isPrime(9);
-
-//        List<Integer> numbers = new ArrayList<>(Arrays.asList(
-//                1,
-//                2,
-//                3
-//        ));
-//        System.out.println(numbers);
-//        numbers.add(4);
-//        System.out.println(numbers);
-//        System.out.println(numbers.get(0));
-//        numbers.add(0, 3);
-//        System.out.println(numbers);
-//        numbers.remove(0);
-//        System.out.println(numbers);
-    }
-
-    /*  =_end of main_= */
 
 
 }
