@@ -50,11 +50,31 @@ public class Warmup {
 //    System.out.println(numbers);
 
         solve(12, 20, 8);
+
+        weirdNumbers(2);
     }
 
     /* end of main */
 
     /* start of exercises */
+
+
+    // random conditionals exercise
+    public static void weirdNumbers(int N) {
+    if (N % 2 != 0) {
+        System.out.println("Weird");
+    } 
+    else if (N % 2 == 0 && N >= 2 && N <= 5) {
+        System.out.println("Not Weird");
+    }
+    else if (N % 2 == 0 && N >= 6 && N <= 20) {
+        System.out.println("Weird");
+    }
+    else if (N > 20) {
+        System.out.println("Not Weird");
+    }
+        
+    }
 
     // calculate total meal cost
     public static void solve(double meal_cost, int tip_percent, int tax_percent) {
