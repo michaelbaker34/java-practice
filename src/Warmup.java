@@ -48,9 +48,7 @@ public class Warmup {
 //    System.out.println(numbers);
 //    numbers.remove(0);
 //    System.out.println(numbers);
-
         solve(12, 20, 8);
-
         weirdNumbers(2);
     }
 
@@ -58,6 +56,20 @@ public class Warmup {
 
     /* start of exercises */
 
+
+    // factorialize method
+    public static int factorial(int n) {
+        if (n < 0) {
+            return -1;
+        }
+        else if (n == 0) {
+            return 1;
+        }
+        else {
+            return (n * factorial(n - 1));    
+        }
+        
+    }
 
     // random conditionals exercise
     public static void weirdNumbers(int N) {
