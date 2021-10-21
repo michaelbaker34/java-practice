@@ -1,61 +1,78 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
+import java.io.*;
 
 public class Warmup {
 
 
     public static void main(String[] args) {
 
-//    isPrime(5);
-//    isPrime(9);
-//    List<Integer> lOne = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-//    List<Integer> lTwo = new ArrayList<>(Arrays.asList(2, 3, 4, 5));
-//    List<Integer> lThree = new ArrayList<>(Arrays.asList(3, 4, 5, 6));
-//    System.out.println(secondListIsOneMore(lOne, lTwo)); // return true
-//    System.out.println(secondListIsOneMore(lOne, lThree)); // return false
-//    System.out.println(secondListIsOneMore(lTwo, lThree)); // return true
-//    System.out.println(firstChar("bob"));
-//    System.out.println(secondChar("bob"));
-//    System.out.println(lastChar("bob"));
-//    System.out.println(secondToLastChar("bob"));
-//    userWantsToContinue();
-//    isEven(1);
-//    isEven(2);
-//    isOdd(1);
-//    isOdd(2);
-//    countOdds(1, 5);
-//    countOdds(111, 120);
-//    countEvens(1, 5);
-//    countEvens(111, 120);
-//    isVowel('e');
-//    hasVowels("pan");
-//    hasVowels("brd");
-//    countVowels("bread");
-//    fizzBuzz();
-//    fizzBuzzRecursion(0, 100);
-//    List<Integer> numbers = new ArrayList<>(Arrays.asList(
-//            1,
-//            2,
-//            3
-//    ));
-//    System.out.println(numbers);
-//    numbers.add(4);
-//    System.out.println(numbers);
-//    System.out.println(numbers.get(0));
-//    numbers.add(0, 3);
-//    System.out.println(numbers);
-//    numbers.remove(0);
-//    System.out.println(numbers);
-        solve(12, 20, 8);
-        weirdNumbers(2);
+        // isPrime(5);
+        // isPrime(9);
+        // List<Integer> lOne = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+        // List<Integer> lTwo = new ArrayList<>(Arrays.asList(2, 3, 4, 5));
+        // List<Integer> lThree = new ArrayList<>(Arrays.asList(3, 4, 5, 6));
+        // System.out.println(secondListIsOneMore(lOne, lTwo)); // return true
+        // System.out.println(secondListIsOneMore(lOne, lThree)); // return false
+        // System.out.println(secondListIsOneMore(lTwo, lThree)); // return true
+        // System.out.println(firstChar("bob"));
+        // System.out.println(secondChar("bob"));
+        // System.out.println(lastChar("bob"));
+        // System.out.println(secondToLastChar("bob"));
+        // userWantsToContinue();
+        // isEven(1);
+        // isEven(2);
+        // isOdd(1);
+        // isOdd(2);
+        // countOdds(1, 5);
+        // countOdds(111, 120);
+        // countEvens(1, 5);
+        // countEvens(111, 120);
+        // isVowel('e');
+        // hasVowels("pan");
+        // hasVowels("brd");
+        // countVowels("bread");
+        // fizzBuzz();
+        // fizzBuzzRecursion(0, 100);
+        // List<Integer> numbers = new ArrayList<>(Arrays.asList(
+        //         1,
+        //         2,
+        //         3
+        // ));
+        // System.out.println(numbers);
+        // numbers.add(4);
+        // System.out.println(numbers);
+        // System.out.println(numbers.get(0));
+        // numbers.add(0, 3);
+        // System.out.println(numbers);
+        // numbers.remove(0);
+        // System.out.println(numbers);
+        // solve(12, 20, 8);
+        // weirdNumbers(2);
+        // System.out.println(factorial(4));
+        Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		for (int i = 0; i < T; i++) {
+			int age = sc.nextInt();
+			Person p = new Person(age);
+			p.amIOld();
+			for (int j = 0; j < 3; j++) {
+				p.yearPasses();
+			}
+			p.amIOld();
+			System.out.println();
+        }
+		sc.close();
+
+        T = 4;
+
+        
     }
 
     /* end of main */
 
     /* start of exercises */
 
+    
 
     // factorialize method
     public static int factorial(int n) {
